@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: java
+  namespace: namespace-workflow-1715261295898
+spec:
+  type: LoadBalancer
+  selector:
+    app: java
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
